@@ -1,0 +1,26 @@
+{
+  "c51e3e968b4e71de1098fc30ab70218d": {
+    "model": "product",
+    "saledate": "date",
+    "state": "region",
+    "sellingprice": "revenue"
+  },
+  "fc6ce82701944006d1a7b536ac81b152": {
+    "Model": "product",
+    "Year": "date",
+    "Region": "region",
+    "Price_USD": "revenue"
+  },
+  "cd9606bb32857ec4c4ebaef567b6494e": {
+    "Model": "product",
+    "Year": "date",
+    "Region": "region",
+    "Price_USD": "revenue"
+  },
+  "49f2a0a8ed9ee520c2d142f40a924f43": {
+    "product": "product",
+    "date": "date",
+    "region": "region",
+    "revenue": "revenue"
+  }
+}
