@@ -10,13 +10,20 @@ import os
 
 # ================= AUTH SYSTEM =================
 import json
-USER_FILE = "user.json"
+BASE_DIR = os.path.dirname(__file__)
+USER_FILE = os.path.join(BASE_DIR, "user.json")
+LOG_FILE = os.path.join(BASE_DIR, "activity_log.json")
+
 
 def load_user():
-    if os.path.exists(USER_FILE):
-        with open(USER_FILE, "r") as f:
-            return json.load(f)
+    try:
+        if os.path.exists(USER_FILE):
+            with open(USER_FILE, "r") as f:
+                return json.load(f)
+    except:
+        return None
     return None
+
 
 def save_user(data):
     with open(USER_FILE, "w") as f:
@@ -34,10 +41,14 @@ import datetime
 LOG_FILE = "activity_log.json"
 
 def load_logs():
-    if os.path.exists(LOG_FILE):
-        with open(LOG_FILE, "r") as f:
-            return json.load(f)
+    try:
+        if os.path.exists(LOG_FILE):
+            with open(LOG_FILE, "r") as f:
+                return json.load(f)
+    except:
+        return []
     return []
+
 
 def save_logs(logs):
     with open(LOG_FILE, "w") as f:
