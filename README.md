@@ -1,10 +1,5 @@
 # SALES-AI-ASSISTANT
 
-Abhishek… ab banaate hain **REAL FAANG-level README**.
-Clean. Structured. Business + Engineering depth dono show karega.
-
-Copy this completely 👇
-
 ---
 
 # 🚀 BizSight AI
